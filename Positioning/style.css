@@ -2,6 +2,50 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: Fira Code;
+  text-align: center;
+}
+.boxes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.boxes div {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+}
 
-
-
+/*Doesnt affect the position of other element*/
+#red {
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+/*Removed from the normal document flow , and is positioned to its closest ancestor*/
+#green {
+  background-color: green;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+/*
+Positioned relative to its initial containing block
+No space is created for the layout in the document or page
+*/
+#blue {
+  background-color: blue;
+  position: fixed;
+}
+#black {
+  background-color: black;
+  position: sticky;
+}
+p {
+  margin: 20px;
+  line-height: 50px;
+}
