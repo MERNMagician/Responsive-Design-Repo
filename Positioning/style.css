@@ -45,6 +45,7 @@ No space is created for the layout in the document or page
   background-color: black;
   position: sticky;
 }
+
 p {
   margin: 20px;
   line-height: 50px;

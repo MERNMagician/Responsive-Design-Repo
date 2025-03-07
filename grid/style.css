@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  grid-column-gap: 10px;
+}
+
+*/
+
+/*
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 200px 100px;
+}
+
+*/
+
+.container div {
+  padding: 20px;
+  border: 2px solid black;
+  text-align: center;
+  color: white;
+  font-family: Jetbrains Mono;
+}
+
+.one {
+  background-color: blue;
+}
+.two {
+  background-color: yellow;
+}
+.three {
+  background: red;
+}
+.four {
+  background-color: aquamarine;
+}
+.five {
+  background-color: blueviolet;
+}
+.six {
+  background-color: brown;
+}
