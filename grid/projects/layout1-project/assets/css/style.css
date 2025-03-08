@@ -14,8 +14,9 @@ body {
 }
 .grid-container {
   display: grid;
+  /*The height of the container*/
   height: 100vh;
-
+  /*Here we set the spacing into auto space for both the heading and the footer , we then set most of the space to the main content of the page*/
   grid-template-rows: auto 1fr auto;
 }
 .container-1 {
@@ -26,8 +27,11 @@ body {
 }
 .navigation {
   display: grid;
+  /*Sets the grid alignment in horizontal way*/
   grid-template-columns: 2fr repeat(5, 1fr);
   align-items: center;
+
+  /*Calculates the overall width then devide it by 10*/
   gap: calc(100% / 10);
 }
 .navigation li {
@@ -43,19 +47,32 @@ body {
 }
 .button {
   margin-right: 20px;
-}
-.item button {
-  border-radius: 20px;
-  padding: 15px;
-  font-family: Poppins;
+  width: 10vw;
+  border-radius: 15px;
+  padding: 11px;
+  border-radius: 40px;
   border: none;
   background-color: black;
   color: white;
+  font-family: Poppins;
 }
+.gridmain-1 button {
+  border-radius: 30px;
+  padding: 12px;
+  font-family: Poppins;
+  border: 1px solid grey;
+  color: white;
+  width: 15vw;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
 .item {
   padding: 5px;
   background-color: white;
-  border: 4px solid tomato;
+  border: 4px solid black;
   border-radius: 6px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
